@@ -5,8 +5,8 @@ metadata:
   name: multicontainerpod
 spec:
   containers:
-    - name: abhirocksf5/lms-fe
-      image: nginx
+    - name: firstcontainer
+      image: abhirocksf5/lms-fe
       ports:
       - containerPort: 80
     - name: secondcontainer
