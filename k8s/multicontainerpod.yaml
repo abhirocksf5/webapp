@@ -5,11 +5,11 @@ metadata:
   name: multicontainerpod
 spec:
   containers:
-    - name: firstcontainer
+    - name: abhirocksf5/lms-fe
       image: nginx
       ports:
       - containerPort: 80
     - name: secondcontainer
-      image: ubuntu:22.04
-      command: ["echo"]
-      args: ["Hello, World"]
+      image: abhirocksf5/lms-be
+      ports:
+      - containerPort: 8080
