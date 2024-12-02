@@ -1,0 +1,15 @@
+# comments will be ignored
+apiVersion: v1
+kind: Pod
+metadata:
+  name: MultiContainerPod
+spec:
+  containers:
+    - name: firstcontainer
+      image: nginx
+      ports:
+      - containerPort: 80
+    - name: secondcontainer
+      image: ubuntu:22.04
+      command: ["echo"]
+      args: ["Hello, World"]

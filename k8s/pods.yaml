@@ -1,5 +1,5 @@
 # comments will be ignored
-apiVersion: app1
+apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-pod
