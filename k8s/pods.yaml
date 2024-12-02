@@ -1,0 +1,11 @@
+# comments will be ignored
+apiVersion: app1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+    - name: firstcontainer
+      image: nginx
+      ports:
+      - containerport: 80
